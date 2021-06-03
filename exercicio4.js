@@ -4,6 +4,6 @@ function modular(x, y) {
 
 console.log(modular(15, 4))
 
-() = (b, c) => b % c
+modular2 = (b, c) => b % c
 
-console.log((12, 5))
+console.log(modular2(12, 5))
