@@ -2,8 +2,8 @@
 
 function simples(capitalInicial, taxa, tempo){
     jurosSimples = capitalInicial * (taxa/100) * tempo
-    montante = capitalInicial + jurosSimples
-    console.log(montante)
+    montanteSimples = capitalInicial + jurosSimples
+    console.log(montanteSimples)
 }
 
 simples(100, 5, 2)
@@ -11,9 +11,8 @@ simples(100, 5, 2)
 //juros Compostos
 
 function compostos(capitalInicial, taxa, tempo) {
-    jurosCompostos = capitalInicial * (1 + taxa)** tempo
-    montante = capitalInicial + jurosCompostos
-    console.log(montante)
+    jurosCompostos = capitalInicial * (1 + (taxa/100))** tempo
+    console.log(jurosCompostos)
 }
 
-compostos(100, 5/100, 2)
+compostos(100, 5, 2)
